@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* basic_02.css */
+#wrap {
+  color: #f00; }
+
+.icon_01 {
+  background-image: url("../../img/main/nature/login1.jpg"); }
+
+/*
+// %box{display:block; width:100%; height:100%;}
+
+// ul{@extend %box;}
+// li{@extend %box;}
+
+// .box:after{content:" "; @extend %box;}
+// .box::after{content:" "; @extend %box;} 권장하지 않음!!
+*/
+.my_01 {
+  float: left;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/main//1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-attachment: fixed; }
+
+#wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/main/2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-attachment: fixed; }
+
+#headBox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/main/3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-attachment: fixed; }
+
+.testUnit {
+  width: 960px;
+  width: 60rem; }

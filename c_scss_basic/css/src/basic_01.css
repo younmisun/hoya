@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* test */
+/*변수*/
+html, body { color: #555; }
+
+h1 { color: #555; }
+
+#headBox h1 a { color: #555; }
+
+#headBox h1 a:hover { color: #a2a2a2; }
+
+#headBox h1 a:active { color: #090909; }
+
+#headBox h1 a { color: #555; }
+
+#headBox h1 a:hover { color: #a2a2a2; }
+
+#headBox h1 a:active { color: #090909; }
+
+#headBox h1 a:focus { color: #555; }
+
+.product_list { width: 100%; }
+
+.product_list > ul { width: 90%; }
+
+.product_list > ul > li { width: 100%; }
+
+.product_list > ul > li:nth-child(1) { background-color: #fff; }
+
+.product_list > ul > a { display: block; width: 100%; }
+
+.product_list > ul > a:hover { background-color: #f0a; }
+
+.product_list > ul > span { display: block; width: 0; }
