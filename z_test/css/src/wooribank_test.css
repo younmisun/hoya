@@ -1,0 +1,23 @@
+#wrap{width:100vw; height:970px; min-height:160px;}
+ #headBox{position:fixed; left:0; right:0; width:100%; min-width:100vw;
+        height:140px; margin:auto; background-color:#fff;}
+ #logoArea{width:100%; min-width:150px; height:80px; box-sizing:border-box;}
+  h1{float:left; width:150px; height:40px; margin-top:23px; margin-left:430px;
+     background-image:url(../../img/f_logo.png);
+     background-repeat:no-repeat; background-position:50% 50%;}
+  h1>a{display:block; width:100%; height:100%;}
+ #gnb{width:1000px; height:auto; margin:0 auto;}
+ #gnb:before{position:absolute; content:" "; display:block; left:0; width:100vw; height:60px; border-top:1px solid #333333; border-bottom:1px solid #333333; box-sizing:border-box;}
+
+ 
+ #gnb{width:100%; height:auto; background-color:#fff; padding:0 20vw;}
+ #gnb:after, #gnb ul::after {content:" "; display:block; clear:both;}
+ #gnb li{float:left; width:200px; height:auto;}
+ #gnb dt{position:relative; width:200px; height:60px; font-size:22px; font-weight:bold; text-align:center; line-height:60px;}
+ #gnb dt:before{position:absolute; top:0; left:0; content:" "; display:block; width:1px; height:20px; margin:20px 0; background-color:#333333;}
+ #gnb li:first-child dt:before{content:" "; display:none; width:0; height:0;}
+ #gnb dt>a{display:block; width:100%; height:100%;}
+ #gnb dd{display:none; width:200px; height:auto; font-size:16px; padding:0 1rem;}
+ #gnb dd>a{display:block; width:100%; height:40px; line-height:40px;}
+
+ #conBox{width:100vw; height:100%; padding-top:140px; background-color:#fff;}
