@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* font_basic_02.css */
+/* 웹폰트 |
+   @font-face {} : 서체를 강제로 정의할 때 사용하는 기능(비디오요소와 마찬가지로 외부폰트 문서를 불러와서 설정하는 기능)
+   @font_face { font_family:... } : 불러온 폰트 파일의 이름을 제정하는 것(내 마음대로 이름을 만드는 것)
+   @font_face { src:... } : 사용할 서체의 위치를 불러오는 것
+   @font_face { src:url(); } : 사용할 서체 브라우저 환경에 맞게 세팅
+   @font_face { src:url(); format:(); } : 불러온(url) 서체의 format방식을 정리
+   
+   *format : eot - IE 하위버전
+   *format : woff - 일반브라우저, IE하위버전 지원
+   *format : woff2 - 일반브라우저, IE하위버전 지원
+   *format : ttf - 일반브라우저, win, mac   
+   *format : svg - 특정브라우저에서 font호환율이 낮은 경우 이미지형식으로 대체*/
+
+   p{font-family:gyeonggi;}
+   .convert_01{font-weight:normal;}
+   .convert_02{font-weight:bold;}
+   .convert_03{font-weight:lighter; color:#fa0;}

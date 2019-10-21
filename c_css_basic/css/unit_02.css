@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* unit_02.css */
+
+html, body {width:100%; height:100%}
+
+#wrap{width:100%; height:100%;}
+#conBox{width:800px; height:300%; background-color:rgba(100,200,250,0.5);}
+.vw_test{width:20vmin; height:200vw; background-color:#caf;}
+/* %로 주면 부모값을 기준으로 주기 때문에 브라우저 크기를 늘렸다 줄였다해도 가만히 있음 */
+.vh_test{width:20vh; height:20vh; background-color:#f6c;}
+/* 가로1픽셀 세로1픽셀->정사각형으로 만들어질 것 같지만 약간 직사각형.
+왱? 픽셀로 보면 가로 1픽셀은 1 세로는 0.9픽셀로 보임 */

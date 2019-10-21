@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* 이미지를 배경에 처리해서 사용하는 기능
+ * 기준경로는 css문서를 작성하고 있는 곳
+ * 불러온 이미지는 무조건 반복패턴으로 처리된다
+ * 기본 불러오는 이미지의 좌표는 (부모요소의 기준) x축0 y축0
+ * 단, position-attatchment:fixed;에서는 좌표의 기준은 절대좌표(브라우저 기준)
+ 
+- 대표적인 background-image관련된 태그 -
+ * background-image:; => 이미지를 불러오는 방법, 그라데이션처리
+ * background-repeat:; => 전체반복, x축만 반복, y축만 반복, 반복 하지 않음
+ * background-position:; => 좌표를 입력, 10px 40px(띄어쓰기,콤마아님) | 10% 40% 
+ * background-size:; => cove | contain | 100% auto(가로,세로 순 콤마없긔!)
+ * background-attatchment:; => fixed | scroll
+ */
+
+
+#wrap{width:100%; min-width:1200px; height:auto; min-height:600px; background-color:#444;}
+ #headBox{width:100%; height:auto; border-bottom:3px solid #333; margin-bottom:1rem;}
+ #contentBox{width:100%; height:auto; padding:1rem; box-sizing:border-box; background-color:#acf;}
+ .before_img{width:400px; height:200px; border:2px solid #fff;}
+ .img_01{position:relative; z-index:100; width:100%; height:100%; background-color:#07f; overflow:hidden}
+ /* 부모요소에 z-index를 넣으면 이 요소의 뒤로는 절대 가지 않는다
+    z-index는 layer랑 성격이 비슷하당! */
+ figcaption{font-size:2rem; font-weight:bold;}
+ img{position:absolute; top:0; left:0; width:100%; height:auto;}
+
+
+.css_img{width:25rem; height:18.75rem; border:2px solid #357;
+ background-image:url("../img/ninja.png");
+ background-size:40% auto; background-repeat:no-repeat;
+ background-position:48% 50%; background-color:#3fe;}
+ /* size줄 때 같이 %를 주면 찌그러짐.
+  x축이던 y축이던 하나에만 퍼센트를 주고 나머지는 auto로 줘야 찌그러지지 않는다 
+  background로 속성을 주면 패턴으로 인식해서 이미지박스안에 이미지가 작을 경우 반복되서 나옴
+  그걸 방지하려면 background-repeat:no-repeat을 줘야함다.
+  혹시 가로축 혹은 세로축만 패턴을 하고 싶다면 repeat-x, repeat-y를 주깅! */
+
+.css_img_02 {width:50rem; height:40rem; background-color:#ddd;
+ background-image:url("../img/ninja.png"),url("../img/image_h_01.jpeg");
+ background-size:auto 20%, 50% auto; background-repeat:repeat-x,no-repeat;
+ background-position:0 0,0 100% 100%;}
+ .css_img_02 p {width:0; height:0; overflow:hidden;}
+ /* img src를 사용할 때 이미지에 대한 설명은 html에서 alt로 사용하는데, background로 
+    이미지를 줄 경우에는 p태그안에 hidden 클래스를 주거나 p에 대한 css 속성을 줘서 숨겨준다
+    ->image replace(IR)기법 중 하나
+    IR기법!
+    1. width:0 height:0 overflow:hidden-> 그 다음에 p태그가 아닐 경우에는 display:block을 줘야하구 -> block을 주면 줄이 바껴버리니깐 position:absoulte;를 줌
+    (제일 많이 쓰는 기법!_!)
+    2. text-indent:-9999px :과거에는 썼으나, 현재는 화질크기가 커지다보니 큰 화면에서는 튀어나온 글자가 보일 경우가 있음. ->대안1:-9999rem주기
+    3. font-size:0; : 부모요소에서 폰트를 수정할 경우 튀어나올 수 있는 오류가 발생할 수 있기 때문에 권장하지 않음 */
+ /* 짧은주기로 바꾸는 이미지는 주로 img src를 많이 사용한다 */
+
+ ul {width:100%; height:200px;}
+ li {float:left; width:110px; height:110px; background-color:#fff; margin:1rem; border-radius:0.5rem;}
+ li>a{display:block;width: 100%;height: 100%;}
+ .hidden_wrap a>span {display:block; position:absolute; width:0; height:0; overflow:hidden;}
+ .css_img_03 li>a
+ {background-image:url("../img/icons_01.png");
+  background-repeat:no-repeat;
+  background-position:0 0;}
+
+ .css_img_03 li:nth-child(1)>a{background-position:0 0;}
+ .css_img_03 li:nth-child(1)>a:hover{background-position:-237px -201px;}
+ .css_img_03 li:nth-child(1)>a{transition:all 1000ms ease;}
+
+ .css_img_03 li:nth-child(2)>a{background-position:-237px -201px;}
+ .css_img_03 li:nth-child(2)>a:hover{background-position:-490px -395px;}
+ .css_img_03 li:nth-child(3)>a{background-position:-490px -395px;}
+ .css_img_03 li:nth-child(4)>a{background-position:-994px -600px;}
+ .css_img_03 li:nth-child(5)>a{background-position:-490px -800px;}
+ .css_img_03 li:nth-child(6)>a{background-position:-490px -800px;}
+
+
+ /* 240/1100*100
+ 400/900*100 */

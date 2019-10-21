@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+html,body {width:100%; height:100%;}
+
+#wrap{width:100%; height:100%; background-color:#acc; color:#000; text-shadow:0.2rem 0.2rem 0.2rem #181818;}
+
+@media screen and (max-width:500px) {#wrap {width:50%; height:100%; background-color:#fca; text-shadow:none;}}
+
+@media screen and (min-width:501px) and (max-width:800px) {#wrap{width:50%; height:50%; background-color:#ca7; text-shadow:none;}}
+
+po
+/* @media screen and (max-width:600px){
+  #wrap {background-color:#fca;} }
+@media screen and (min-width:601px) and (max-width:900px) {
+  #wrap {background-color:#0af;} } 범위지정 601보다 크고 900보다 작으면 써라? */
+
+/* 웹페이지를 media에 있는 screen의 상황, 인쇄상황으로 하구싶다면 @media print
+   @media handheld -> PC를 고려하지 않고 손으로 들고다니는 것만 설정할거얌
+   @media tv -> tv를 고려해서 설정할거얌
+   @media horizontal 모바일의 가로형 길이만 설정...졸라 많음(!)
+   @media screen 화면상에 보여지는 기기들
+   @media screen and(그리고) 멕시멈크기 ,(또는 or) ()<-묶음표시!_! */
+
