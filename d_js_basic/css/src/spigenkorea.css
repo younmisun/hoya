@@ -1,0 +1,12 @@
+/* spigenkorea.css */
+
+#wrap{width:100vw; height:auto; background-color:#eee; color:#000; font-size:2rem;}
+#headBox{width:100vw; height:auto;}
+  .logo{float:left; width:20%; height:100px;}
+  .menuArea{float:left; width:60%; height:100px;}
+  .menuArea>dl{float:left; width:25%; text-align:center;}
+  .menuArea dt{font-weight:bold; height:100px; background-color:#333; line-height:100px;}
+  .menuArea dd{display:none; font-size:20px;}
+  .moreArea{float:right; width:20%; height:100px;}
+
+  

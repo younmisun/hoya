@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- example_index.html -->
+<html lang="ko-KR">
+<head>
+<noscript>
+<!-- 스크립트가 제대로 동작하지 않을 때 대처하는 속성 -->
+<p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+자바스크립트의 기능을 활성화 해주세요.</p>
+<p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+</noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--[lf lte ie 9]>
+<scirpt src="../ie/html5shiv/dist/thml5shiv.min.js"></scirpt>
+<scirpt src="../ie/PIE/PIE.js"></scirpt>
+<scirpt src="../ie/respond/dest/respond.min.js"></scirpt>
+<![endif]-->
+
+<link rel="shortcut" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<title>자바스크립트..!</title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <header id="headBox">
+    <h1><a href="../content.html">자바스크립트</a></h1>
+  </header>
+  <main id="contentBox">
+    <h2>배열 이해하기</h2>
+    <p>배열이란 목록의 나열이라는 의미를 가지고 있는 형식으로<br />
+       이는 다양한 내용 및 변수 또는 함수를 나열하는 방식이다.</p>
+    <br />
+  <h3>예시 : 커피의 종류</h3>
+  <pre>
+  &lt;ul&gt;
+    &lt;li&gt;아메리카노&lt;/li&gt;
+    &lt;li&gt;아이스라떼&lt;/li&gt;
+    &lt;li&gt;카라멜마끼야또&lt;/li&gt;
+    &lt;li&gt;카푸치노&lt;/li&gt;
+    &lt;li&gt;프라푸치노&lt;/li&gt;
+  </ul>
+  </pre>
+  <hr/>
+    <h2>객체 이해하기</h2>
+    <p>배열과 유사하며, 나열의 의미는 같으나, 정의와 설명이 첨부된 형식<br />
+       정의의 설명값이 함수로 처리되면 메소드라고 불리며, 단순설명으로 처리되면<br /> 
+       프로퍼티라고 불리기도 함.</p>
+  <h3>예시 : 음료의 종류</h3>
+  <dl>
+    <dt>커피</dt> <dd>커피원두를 주 원료로 한 음료</dd>
+    <dt>쥬스</dt> <dd>다양한 종류를 가진 커피를 제외한 음료</dd>
+    <dt>디저트</dt> <dd>커피 및 주스와 곁들여 막을 수 있는 냠</dd>
+  </dl>
+  </main>
+</div>
+<!-- script -->
+<script src="../../js/base/src/object_basic_01.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: '';
+    src: url('hinted-BMDoHyeon-OTF00.eot');
+    src: url('hinted-BMDoHyeon-OTF00.eot?#iefix') format('embedded-opentype'),
+        url('hinted-BMDoHyeon-OTF00.woff2') format('woff2'),
+        url('hinted-BMDoHyeon-OTF00.woff') format('woff'),
+        url('hinted-BMDoHyeon-OTF00.ttf') format('truetype'),
+        url('hinted-BMDoHyeon-OTF00.svg#BMDoHyeon-OTF00') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
