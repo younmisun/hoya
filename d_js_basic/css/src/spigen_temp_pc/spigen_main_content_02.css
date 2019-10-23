@@ -1,0 +1,44 @@
+/* spigen_main_content_02.css */
+
+#conBox2{position:relative; z-index:100; width:100%; height:100%; padding-top:100px; box-sizing:border-box;
+background-image:url("../../../img/spigen/media_01.jpg");
+background-repeat:no-repeat; background-position:50% 50%;
+background-size:cover;}
+#conBox2:before{content:" "; display:block; position:absolute; z-index:-1; top:0; left:0;
+width:100%; height:100%; background-color:rgba(255,71,0,0.8);}
+
+#conBox2>h2{width:100%; height:40px; padding:20px 0; text-transform:uppercase;
+font-size:2.5rem; color:#fff; text-align:center; font-weight:bold;}
+
+#conBox2>p{width:100%; text-align:center; color:#fff; font-size:1.2rem; margin-bottom:30px;}
+#conBox2>ul{width:80%; min-width:1300px; height:23.4375vw; min-height:350px;
+   /* 450 / 1920 * 100 */ margin:auto;}
+#conBox2>ul>li{float:left; width:32%; height:100%; background-color:#fff; margin-right:2%; overflow:hidden;}
+#conBox2>ul>li:last-child{margin-right:0;}
+#conBox2>ul>li>a{display:block; width:100%; height:100%;
+  background-repeat:no-repeat; background-position:50% 50%; background-size:cover;}
+#conBox2>ul>li:nth-child(1)>a{background-image:url(../../../img/spigen/media_01.jpg);}
+#conBox2>ul>li:nth-child(2)>a{background-image:url(../../../img/spigen/media_02.jpg);}
+#conBox2>ul>li:nth-child(3)>a{background-image:url(../../../img/spigen/media_03.jpg);}
+
+#conBox2>ul>li>a>dl{width:100%; height:100%; background-color:rgba(0,0,0,0.5);
+                    padding:0 10%; box-sizing:border-box;
+                    transform:translateY(80%); transition:all 300ms ease;}
+#conBox2>ul>li>a>dl>dt{width:100%; height:50px; text-align:center; font-size:1.4rem; color:#fff;
+  text-transform:uppercase; font-weight:bold; padding-top:2vh; transition:all 300ms ease;}
+
+#conBox2>ul>li>a>dl>dd{width:100%; height:auto; text-align:center;font-size:1.4rem; color:#fff;
+                       word-break:keep-all; opacity:0; transition:all 300ms ease;}
+/* #conBox2>ul>li>a:focus dl,
+#conBox2>ul>li>a:hover dl{transform:translateY(0);}
+#conBox2>ul>li>a:focus dt,         
+#conBox2>ul>li>a:hover dt{padding-top:12vh; color:#f30;}                   
+#conBox2>ul>li>a:focus dd,
+#conBox2>ul>li>a:hover dd{opacity:1;} */
+
+#conBox2>ul>li>a.action dl{transform:translateY(0);}        
+#conBox2>ul>li>a.action dt{padding-top:12vh; color:#f30;}                   
+#conBox2>ul>li>a.action dd{opacity:1;}
+
+
+#conBox2>ul>li>a>dl>dd{width:100%; height:auto; text-align:center; font-size:1.2rem; color:#fff; word-break:keep-all;}

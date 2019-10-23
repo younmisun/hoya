@@ -1,0 +1,6 @@
+/* rwd_test_02_mobile_480.css */
+
+@media screen and (min-width:480px)  and (max-width:767px) {
+  .info_02{display:none; background-color:#fa0;}
+  .info_03{display:none; background-color:#f50;}
+}

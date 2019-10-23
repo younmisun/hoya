@@ -1,0 +1,16 @@
+// i.scss
+
+@import "./var";
+@import "./commonLayout";
+
+#wrap{width:100%; height:auto; background-color:nth($color,1);}
+
+h1{color:nth($tColor, 3);
+   background-color:nth($color,2);
+   border-bottom:$border;}
+
+@import "./myData";
+
+@media screen and (max-width:480px) {
+  @import "./myData";
+}

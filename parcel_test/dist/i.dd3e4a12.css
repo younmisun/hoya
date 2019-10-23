@@ -1,0 +1,23 @@
+#wrap {
+  width: 100%;
+  height: auto;
+  background-color: #fa0; }
+
+h1 {
+  color: #fff;
+  background-color: #f06;
+  border-bottom: 1px solid #f06; }
+
+#wrap {
+  width: 100%;
+  height: 90vw;
+  background-color: #3a0; }
+
+@media screen and (max-width: 480px) {
+  #wrap {
+    width: 100%;
+    height: 90vw;
+    background-color: #3a0; } }
+
+
+/*# sourceMappingURL=/i.dd3e4a12.css.map */
