@@ -7,6 +7,84 @@
   const gnb = $('#gnb');
   const sideGnbArea = $('.side_gnb_area');
 
+  //============================================================================
+  // header 영역에 해당하는 내용을 만들기
+  
+  const gnbMenu = [{title:'about', titleLink:'#######',
+                    /* 'sub':['who we are','what we do','our locations'] */
+                    sub:[{subName:'who we are', subLink:'#####'},
+                         {subName:'what we do', subLink:'#####'},
+                         {subName:'our locations', subLink:'#####'}
+                        ]},
+                    /* sub:['careers','HR Blog','apply'], */
+                   {title:'careers', titleLink:'#######',
+                    sub:[{subName:'careers', snbLink:'#####'},
+                         {subName:'HR Blog', subLink:'#####'},
+                         {subName:'apply', subLink:'#####'}
+                        ]},
+                   {title:'media', titleLink:'#######',
+                   sub:[{subName:'media', subLink:'#####'}]},
+
+                   {title:'IR', titleLink:'#######',
+                    sub:[{subName:'investors', snbLink:'#####'},
+                         {subName:'IR Archive', snbLink:'#####'},
+                         {subName:'IR Meeting', snbLink:'#####'}
+                        ]}];
+
+/*   //gnbMenu[0].title
+  for(let i = 0; i < gnbMenu[0].sub.length; i++){
+    console.log(gnbMenu[0].sub[i]);
+  }
+  for(let i = 0; i < gnbMenu[1].sub.length; i++){
+    console.log(gnbMenu[1].sub[i]);
+  }
+  for(let i = 0; i < gnbMenu[2].sub.length; i++){
+    console.log(gnbMenu[2].sub[i]);
+  }
+  for(let i = 0; i < gnbMenu[3].sub.length; i++){
+    console.log(gnbMenu[3].sub[i]);
+  } */
+
+/* 
+    for(let i=0; i<gnbMenu.length; i++){
+    console.log(gnbMenu[i].title);
+    //-----------------------------이중 for문
+    for(let j=0; j < gnbMenu[0].sub.length; j++){
+      console.log(gnbMenu[0].sub[j])
+    }
+  }
+ */
+
+  const menuLen = gnbMenu.length;
+  
+  gnb.append('<ul></ul>'); //gnb영역에 ul생성
+  const gnbUl = gnb.children('ul');
+
+  for(let i = 0; i < menuLen; i++){ 
+    // gnb.append(gnbMenu[i]);
+    gnbUl.append('<li><dl><dt><a href="#"></a></dt><dd></dd></dl></li>');
+    const gnbLi = gnbUl.children('li').eq(i);
+    let gnbLiLink = gnbLi.find('dt').children('a');
+    gnbLiLink.attr('href',gnbMenu[i].titleLink); //링크 속성변경
+    gnbLiLink.text(gnbMenu[i].title);
+
+    let subLen = gnbMenu[i].sub.length;
+
+    for(let j=0; j < subLen; j++){
+      let gnbDd = gnbLi.find('dd'); //for문 안에 let gnbDd를 설정했기 때문에 for문을 빠져나가면 설정값은 사라진다.
+      gnbDd.append('<a href=""></a>');
+      let gnbMyLink = gnbDd.children('a').eq(j);
+      gnbMyLink.text(gnbMenu[i].sub[j].subName);
+      gnbMyLink.attr('href',gnbMenu[i].sub[j].subLink);
+    };
+
+
+  }; //for(i < menuLen)
+
+  
+  
+  //============================================================================
+  
   let gnbContents = gnb.contents().clone(); // 복사를 하지않고 그대로 append 할 경우 기존 내용을 지우고 내용을 삽입할 수 있으니 주의
   sideGnbArea.append(gnbContents);
 

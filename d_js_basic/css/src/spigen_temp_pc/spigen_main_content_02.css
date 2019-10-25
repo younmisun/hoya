@@ -41,4 +41,11 @@ font-size:2.5rem; color:#fff; text-align:center; font-weight:bold;}
 #conBox2>ul>li>a.action dd{opacity:1;}
 
 
-#conBox2>ul>li>a>dl>dd{width:100%; height:auto; text-align:center; font-size:1.2rem; color:#fff; word-break:keep-all;}
+/* #conBox2>ul>li>a>dl>dd{width:100%; height:auto; text-align:center; font-size:1.2rem; color:#fff; word-break:keep-all;} */
+
+/* top_move_btn */
+.top_move_btn{display:none; position:fixed; right:50%; bottom:30px; z-index:1000; margin-right:-45vw; width:100px; height:100px;}
+.top_move_btn>button{width:100%; height:100%; font-size:4rem; color:#fff; background-color:#f70; border-radius:100%;
+                     box-shadow:1px 1px 1px #000;}
+.top_move_btn>button:focus,
+.top_move_btn>button:hover{background-color:#fff; color:#f30;}

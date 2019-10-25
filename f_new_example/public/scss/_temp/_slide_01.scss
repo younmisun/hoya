@@ -1,0 +1,61 @@
+//slide_01.scss
+ 
+// =====================
+.slide_temp{position:relative; width:90%; $pxrem:(min-width,1200); height:700px; 
+  margin:auto; border:$border1; background-color:$sample;}
+
+//.view_btn 좌우버튼
+.view_btn{position:absolute; top:50%; width:100%; height:0;
+&>button{width:100px; height:100px; background-color:$black; float:left;
+         transform:translateY(-50%);
+  &.next{float:right;}
+  &:hover,&:focus{background-color:$primary;}
+  }
+}
+
+//indicator
+@include indicator_type_01('.view_indicator', 30px);
+
+
+$url : '../../img/';
+$myImg : ('img_00.jpeg','img_01.jpeg','img_02.jpeg','img_03.jpeg');
+
+//가로형 슬라이드 배너
+.slide_form{$count:4;
+  width:100%; height:100%; /* overflow:hidden; */
+  .guide{width:100% * $count; height:100%; background-color:$sample;
+   &>div{float:left; width:(100% / $count); height:100%;
+        padding:4rem; box-sizing:border-box;
+        background-repeat:no-repeat; background-position:50% 50%;
+        background-size:cover;
+  //  &:nth-of-type(1){background-color:$white;}
+  //  &:nth-of-type(2){background-color:darken($white,20%);}
+  //  &:nth-of-type(3){background-color:darken($white,40%);}
+  //  &:nth-of-type(4){background-color:darken($white,60%);}
+  // js -> for(let i = 0 ; i<4 ; i++){}
+  // js -> for(최초의 임의변수;반복 횟수;수행하기 위한 연산){}
+  @for $i from 1 through $count {
+    &:nth-of-type(#{$i}){
+    $n : null;
+    // {background-color:darken($white,$i*10%);
+    // {background-image:url($url + nth($myImg,$i));
+      @if ( $i < 10 ) { $n : '0'+$i; }
+      @else { $n : $i; }
+      background-image:url($url + 'img_#{$n}.jpeg');
+    }
+    //@for
+    }
+  
+  }
+  &>div h3{font-size:4rem; color:$white; font-weight:bold;}
+  &>div p{font-size:1.2rem; color:$white; font-weight:bold; margin-bottom:1rem; font-weight:bold;}
+  &>div  .link_btn{width:200px; height:40px;
+    padding:0.5rem; line-height:40px; text-align:center; 
+    background-color:$primary; border-radius:40px;
+  &>a{@include link; color:$white; font-weight:900; font-size:1.3rem;
+      background-color:$primary; border-radius:40px;}
+  &>a:hover,
+  &>a:focus{background-color:$black;}
+  }
+}
+}
