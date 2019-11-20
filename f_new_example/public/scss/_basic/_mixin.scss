@@ -1,4 +1,12 @@
 //mixin.scss
+
+
+//숨기는 영역 처리하기
+@mixin hidden(){
+  display:block; position:absolute; z-index:-10;
+  width:0; height:0; overflow:hidden;
+}
+
 //frame work=========================================================
 
 //span 내부에 있는 text 숨기는 기능 처리하기
@@ -24,8 +32,8 @@
   //interpolation(보간) : 형태 그대로 대입시키도록 처리하는 것
 
   //.view_indicator
-  #{$select} {$w:$myW; $f:100%;  
-  position:absolute; left:50%; bottom:$w; transform:translateX(-50%);
+  #{$select} {$w:$myW; $f:100%;
+  position:absolute; z-index:500; left:50%; bottom:$w; transform:translateX(-50%);
   //가운데로 배치하는 방법 중 하나 position 후 left:50%; transform:tra..X(-50%)!
   width:auto; min-width:135px; height:$w; background-color:$white;
   padding:5px; border-radius:$w;

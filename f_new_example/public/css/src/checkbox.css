@@ -1,0 +1,28 @@
+#wrap {
+  width: 100%;
+  height: 100%; }
+  #wrap #headBox {
+    width: 500px;
+    height: 100px;
+    margin: 50px auto; }
+    #wrap #headBox a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      #wrap #headBox a h1 {
+        font-size: 80px;
+        color: #f00;
+        line-height: 100px;
+        text-align: center; }
+  #wrap #checklist {
+    width: 500px;
+    height: 3000px;
+    margin: auto;
+    background-color: #aa0; }
+    #wrap #checklist #check_agree {
+      width: 100%;
+      height: 100%; }
+      #wrap #checklist #check_agree > .all_agree {
+        width: 100%;
+        height: 45px;
+        background-color: #30a; }

@@ -1,0 +1,15 @@
+
+/* acco.css */
+
+#wrap{width:100%; height:100%; background-color:#fa0;
+  .accor{width:600px; height:auto; background-color:#067;
+  >dt{width:100%; height:50px; background-color:#067;
+      
+  >a{width:100%; height:100%; display:block; color:#fff;
+    text-transform:uppercase; font-size:19px; padding:10px; box-sizing:border-box;
+    &:hover,a:focus{background-color:#047;}
+    i{float:right; z-index:500; width:30px; height:30px; color:#fff; font-size:30px;}}
+  }
+  >dd{display:none; width:100%; height:auto; background-color:#ace;
+      padding:0.7rem; box-sizing:border-box;}}}
+  

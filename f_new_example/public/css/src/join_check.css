@@ -1,0 +1,113 @@
+body {
+  background-color: #fafafa; }
+
+#wrap {
+  width: 460px;
+  height: auto;
+  margin: auto; }
+  #wrap h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 2rem 0; }
+    #wrap h2 i {
+      font-size: 50px;
+      color: #000; }
+  #wrap form {
+    width: 100%;
+    height: auto; }
+  #wrap fieldset:first-of-type {
+    width: 100%;
+    height: auto;
+    min-height: 50px; }
+  #wrap fieldset:last-of-type {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin-top: 30px; }
+    #wrap fieldset:last-of-type > input {
+      width: 220px;
+      height: 60px;
+      border: 0;
+      color: #fff;
+      font-size: 1.5rem; }
+    #wrap fieldset:last-of-type > p {
+      width: 100%;
+      height: auto;
+      clear: both;
+      padding-top: 10px;
+      box-sizing: border-box;
+      font-size: 0.875rem;
+      text-align: center; }
+  #wrap fieldset .check {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin-bottom: 20px; }
+    #wrap fieldset .check strong {
+      font-size: 0.875rem;
+      font-weight: normal;
+      color: #08a600; }
+    #wrap fieldset .check em {
+      font-size: 0.875rem;
+      font-weight: normal;
+      font-style: normal;
+      color: #777; }
+    #wrap fieldset .check > p {
+      font-size: 1rem;
+      word-break: keep-all;
+      letter-spacing: -0.05rem; }
+    #wrap fieldset .check > dl {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
+      #wrap fieldset .check > dl > dt {
+        font-size: 1rem;
+        word-break: keep-all;
+        letter-spacing: -0.05rem; }
+      #wrap fieldset .check > dl > dd {
+        border: 1px solid #555;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 5px 0;
+        background-color: #fff; }
+    #wrap fieldset .check > input {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      border: 0;
+      position: absolute;
+      z-index: -1; }
+      #wrap fieldset .check > input:checked + dl i, #wrap fieldset .check > input:checked + dl p, #wrap fieldset .check > input:checked + p i {
+        color: #08a600; }
+    #wrap fieldset .check i {
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #aaa; }
+  #wrap fieldset .all_check {
+    position: relative;
+    padding-left: 28px; }
+    #wrap fieldset .all_check i {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      font-size: 1.3rem;
+      color: #777; }
+    #wrap fieldset .all_check > p {
+      text-decoration: underline; }
+    #wrap fieldset .all_check > input:focus + p {
+      color: #333; }
+    #wrap fieldset .all_check > input:checked + p i {
+      color: #08a600; }
+  #wrap input[type="reset"] {
+    float: left;
+    background-color: #555; }
+  #wrap input[type="submit"] {
+    float: right;
+    background-color: #08a600; }
+  #wrap input[type="reset"]:focus, #wrap input[type="submit"]:focus {
+    outline: 3px solid #333;
+    font-weight: bold;
+    text-decoration-color: brown; }

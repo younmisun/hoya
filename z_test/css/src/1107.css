@@ -1,0 +1,70 @@
+#wrap {
+  width: 100%;
+  height: 100%; }
+  #wrap #miniProduct {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: auto; }
+    #wrap #miniProduct .btnArea {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 1;
+      width: 100%;
+      height: 0;
+      padding: 20px;
+      box-sizing: border-box; }
+      #wrap #miniProduct .btnArea > button {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 100%; }
+      #wrap #miniProduct .btnArea > .next {
+        float: right; }
+      #wrap #miniProduct .btnArea > .prev {
+        float: left; }
+    #wrap #miniProduct .indicator {
+      position: absolute;
+      left: 50%;
+      bottom: -60px;
+      transform: translateX(-50%);
+      width: 390px;
+      height: auto;
+      padding: 10px;
+      background-color: #888;
+      border-radius: 30px; }
+      #wrap #miniProduct .indicator > li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-right: 15px; }
+        #wrap #miniProduct .indicator > li:last-child {
+          margin-right: 0; }
+        #wrap #miniProduct .indicator > li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px; }
+          #wrap #miniProduct .indicator > li a:hover, #wrap #miniProduct .indicator > li a:focus {
+            background-color: #fa0; }
+    #wrap #miniProduct .product_wrap {
+      overflow: hidden;
+      width: 100%;
+      height: 500px;
+      /* overflow:hidden; */ }
+      #wrap #miniProduct .product_wrap .product {
+        position: relative;
+        left: -100%;
+        width: 1000%;
+        height: 100%; }
+        #wrap #miniProduct .product_wrap .product > li {
+          float: left;
+          width: 10%;
+          height: 500px; }
+
+.action a {
+  background-color: #af0; }

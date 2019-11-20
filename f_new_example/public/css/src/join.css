@@ -1,0 +1,105 @@
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 1px solid #333; }
+
+#joinBox {
+  width: 460px;
+  height: auto;
+  min-height: 500px;
+  margin: 3rem auto;
+  /* background-color:#dfdfdf; */ }
+  #joinBox form {
+    width: 100%;
+    height: auto; }
+  #joinBox .input_area {
+    width: 100%;
+    height: auto;
+    min-height: 200px; }
+    #joinBox .input_area ul {
+      width: 100%;
+      height: auto; }
+      #joinBox .input_area ul > li {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px; }
+        #joinBox .input_area ul > li dl {
+          width: 100%;
+          height: 46px;
+          border: 1px solid #777;
+          box-sizing: border-box; }
+          #joinBox .input_area ul > li dl dt {
+            float: left;
+            width: 44px;
+            height: 100%;
+            border-right: 1px solid #777;
+            box-sizing: border-box; }
+            #joinBox .input_area ul > li dl dt label {
+              display: block;
+              width: 100%;
+              height: 100%;
+              font-size: 2rem;
+              line-height: 46px;
+              text-align: center; }
+          #joinBox .input_area ul > li dl dd {
+            float: right;
+            width: calc(100% - 44px);
+            height: 100%; }
+            #joinBox .input_area ul > li dl dd input {
+              width: 100%;
+              height: 100%;
+              border: 0; }
+        #joinBox .input_area ul > li .narr {
+          display: none;
+          color: #f00;
+          width: 100%;
+          height: auto;
+          min-height: 15px;
+          margin-top: 5px;
+          background-color: #fff; }
+        #joinBox .input_area ul > li .error dl {
+          border-color: #f00; }
+          #joinBox .input_area ul > li .error dl .narr {
+            display: block; }
+  #joinBox .confirm_area {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem; }
+    #joinBox .confirm_area p {
+      color: #333; }
+      #joinBox .confirm_area p > em, #joinBox .confirm_area p strong {
+        font-weight: bold;
+        font-style: normal; }
+      #joinBox .confirm_area p > button {
+        background-color: transparent;
+        text-decoration: underline;
+        color: inherit;
+        font-size: inherit;
+        padding: 0; }
+    #joinBox .confirm_area input[type="submit"] {
+      width: 100%;
+      height: 52px;
+      border: 0;
+      background-color: #0075e9;
+      border-radius: 3px;
+      box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 1.2rem; }
+  #joinBox .terms {
+    width: 100%;
+    height: auto; }
+    #joinBox .terms > div {
+      display: none; }
+
+#footBox address > p {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-style: normal; }
+
+#footBox address .part_01 {
+  text-transform: capitalize; }
+
+#footBox address .part_02::first-letter {
+  display: block;
+  text-transform: uppercase; }

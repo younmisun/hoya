@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- .html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 웹페이지에 관한 설명 설정, 검색할 경우 나오는 설명, 키워드!-->
+<meta name="discription" content="웹 페이지 실습 연습하기">
+<meta name="keyword" content="html, css, javascript, web, design, 윤미">
+<meta name="author" content="윤미쓰"> <!-- 제작자 -->
+<meta name="generator" content="illust, photoshop, sublime, vscode">
+<!-- 30가지 이상의 기능들이 있음! 굳이 사용하지 않아도 된다.  -->
+
+<link rel="stylesheet" href="../../font/fontawesome/css/all.css">
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+<link rel="stylesheet" href="../../css/src/join.css">
+
+<!--[lf lte ie 9]>
+<scirpt src="../ie/html5shiv/dist/thml5shiv.min.js"></scirpt>
+<scirpt src="../ie/PIE/PIE.js"></scirpt>
+<scirpt src="../ie/respond/dest/respond.min.js"></scirpt>
+<![endif]-->
+
+<title>회원가입</title>
+</head>
+<body>
+<noscript>
+<!-- 스크립트가 제대로 동작하지 않을 때 대처하는 속성 -->
+<p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+자바스크립트의 기능을 활성화 해주세요.</p>
+<p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+</noscript>
+<!-- layout -->
+<div id="wrap">
+  <h1>쿠팡</h1>
+  <h2>쿠팡 회원가입 페이지</h2>
+  <article id="joinBox">
+    <form action="" method="post">
+      <fieldset class="input_area">
+        <legend>회원가입 인적사항 작성하기</legend>
+        <ul>
+        <li>
+        <dl>
+        <dt><label for="userName"><i class="far fa-envelope"></i><span class="hidden">로그인에 필요한 계정을 입력하세요</span></label></dt>
+        <dd><input type="text" name="" id="userName" value="" placeholder="이메일을 입력하세요" required="required"></dd>
+        </dl>
+        <span class="narr">이메일을 입력허새요.</span>
+        </li>
+        <li>
+        <dl>
+        <dt><label for="userName"><i class="fas fa-lock"></i><span class="hidden">로그인에 필요한 계정을 입력하세요</span></label></dt>
+        <dd><input type="text" name="" id="userName" value="" placeholder="이메일을 입력하세요" required="required"></dd>
+        </dl>
+        <span class="narr">이메일을 입력허새요.</span>
+        </li>
+        <li>
+        <dl>
+        <dt><label for="userName"><i class="fas fa-unlock"></i><span class="hidden">로그인에 필요한 계정을 입력하세요</span></label></dt>
+        <dd><input type="text" name="" id="userName" value="" placeholder="이메일을 입력하세요" required="required"></dd>
+        </dl>
+        <span class="narr">이메일을 입력허새요.</span>
+        </li>
+        <li>
+        <dl>
+        <dt><label for="userName"><i class="fas fa-user"></i><span class="hidden">로그인에 필요한 계정을 입력하세요</span></label></dt>
+        <dd><input type="text" name="" id="userName" value="" placeholder="이메일을 입력하세요" required="required"></dd>
+        </dl>
+        <span class="narr">이메일을 입력허새요.</span>
+        </li>
+        <li>
+        <dl>
+        <dt><label for="userName"><i class="fas fa-mobile-alt"></i><span class="hidden">로그인에 필요한 계정을 입력하세요</span></label></dt>
+        <dd><input type="text" name="" id="userName" value="" placeholder="이메일을 입력하세요" required="required"></dd>
+        </dl>
+        <span class="narr">이메일을 입력허새요.</span>
+        </li>
+
+
+        </ul>
+      </fieldset>
+
+      <fieldset class="confirm_area">
+        <legend>회원가입 내용 확인 및 동의</legend>
+        <input type="submit" name="coformCheck" value="동의하고 가입하기" />
+        <p>본인은 만 <strong>14세 이상</strong>이며,
+          <button type="button" data-terms="terms_01">쿠팡 이용약관</button>,
+          <button type="button" data-terms="terms_02">전자금융거래이용약관</button>,
+          <button type="button" data-terms="terms_03">개인정보 수집 및 이용</button>,
+          <button type="button" data-terms="terms_04">개인정보 제공</button> 내용을 확인 하였으며, <em>동의합니다.</em>
+          <!-- 'data-'는 사용자가 임의로 만드는 속성 -->
+        </p>
+        <div class="terms">
+          <div class="terms_01"><h4>쿠팡 이용약관</h4></div>
+          <div class="terms_02"><h4>전자금융거래이용약관</h4></div>
+          <div class="terms_03"><h4>개인정보 수집 및 이용</h4></div>
+          <div class="terms_04"><h4>개인정보 제공</h4></div>
+        </div>
+      </fieldset>
+    </form>
+  </article>
+  <footer id="footBox">
+    <address>
+      <p>
+        &copy; <span class="part_01">coupang Corp.</span>
+         <span class="part_02">a</span>ll rights reserved.
+      </p>
+    </address>
+  </footer>
+</div>
+<!-- script -->
+<script src="../../js/base/jquery-3.4.1.min.js"></script>
+<script src="../../js/base/jquery-ui.js"></script>
+<script src="../../js/src/jquery/"></script>
+</body>
+</html>

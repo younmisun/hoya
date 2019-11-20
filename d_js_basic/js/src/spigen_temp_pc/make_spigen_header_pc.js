@@ -62,11 +62,12 @@
 
   for(let i = 0; i < menuLen; i++){ 
     // gnb.append(gnbMenu[i]);
-    gnbUl.append('<li><dl><dt><a href="#"></a></dt><dd></dd></dl></li>');
+    gnbUl.append('<li><dl><dt><a></a></dt><dd></dd></dl></li>');
     const gnbLi = gnbUl.children('li').eq(i);
     let gnbLiLink = gnbLi.find('dt').children('a');
     gnbLiLink.attr('href',gnbMenu[i].titleLink); //링크 속성변경
     gnbLiLink.text(gnbMenu[i].title);
+  
 
     let subLen = gnbMenu[i].sub.length;
 

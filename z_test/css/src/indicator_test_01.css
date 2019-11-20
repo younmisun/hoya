@@ -1,0 +1,99 @@
+span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden; }
+
+#wrap {
+  width: 100%;
+  height: 100%; }
+
+#miniProduct {
+  position: relative;
+  width: 450px;
+  height: 320px;
+  margin: 100px auto; }
+
+.btn {
+  position: absolute;
+  top: 125px;
+  margin: auto;
+  width: 100%;
+  height: 0; }
+  .btn > button {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    transform: translateY(-50%); }
+  .btn > .next {
+    float: right; }
+  .btn > .prev {
+    float: left; }
+  .btn i {
+    font-size: 80px;
+    background-color: none;
+    color: #fff; }
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 40px; }
+  .indicator > li {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px; }
+    .indicator > li:nth-child(1) {
+      margin-left: 0; }
+    .indicator > li > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      border-radius: 100%; }
+      .indicator > li > a span {
+        display: block;
+        width: 0;
+        height: 0;
+        overflow: hidden; }
+    .indicator > li.active > a {
+      background-color: #fa0; }
+
+.product {
+  width: 100%;
+  height: 250px;
+  background-color: #f30;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url("../../img/img_05.jpeg"); }
+  .product > ul {
+    width: 300%;
+    height: 100%; }
+    .product > ul > li {
+      float: left;
+      width: 33.33333%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 20px; }
+      .product > ul > li > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain; }
+        .product > ul > li > a > span {
+          display: block;
+          width: 0;
+          height: 0;
+          overflow: hidden; }
+      .product > ul > li:nth-child(1) > a {
+        background-image: url("../../img/img_fruit_01.png"); }
+      .product > ul > li:nth-child(2) > a {
+        background-image: url("../../img/img_fruit_02.png"); }
+      .product > ul > li:nth-child(3) > a {
+        background-image: url("../../img/img_fruit_03.png"); }

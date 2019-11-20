@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- slide_btn_test.html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 웹페이지에 관한 설명 설정, 검색할 경우 나오는 설명, 키워드!-->
+<meta name="discription" content="웹 페이지 실습 연습하기">
+<meta name="keyword" content="html, css, javascript, web, design, 윤미">
+<meta name="author" content="윤미쓰"> <!-- 제작자 -->
+<meta name="generator" content="illust, photoshop, sublime, vscode">
+<!-- 30가지 이상의 기능들이 있음! 굳이 사용하지 않아도 된다.  -->
+
+<link rel="stylesheet" href="../font/fontawesome/css/all.css">
+<link rel="stylesheet" href="../css/base/reset.css">
+<link rel="stylesheet" href="../css/base/common.css">
+<link rel="stylesheet" href="../css/src/slide_btn_test.css">
+
+<!--[lf lte ie 9]>
+<scirpt src="../ie/html5shiv/dist/thml5shiv.min.js"></scirpt>
+<scirpt src="../ie/PIE/PIE.js"></scirpt>
+<scirpt src="../ie/respond/dest/respond.min.js"></scirpt>
+<![endif]-->
+
+<link rel="shortcut" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<title>문서제목</title>
+</head>
+<body>
+<noscript>
+<!-- 스크립트가 제대로 동작하지 않을 때 대처하는 속성 -->
+<p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+자바스크립트의 기능을 활성화 해주세요.</p>
+<p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+</noscript>
+<!-- layout -->
+<div id="wrap">
+  <h1>TOMTOM<br/>DELICIOUS<br/>MENU</h1>
+<div id="miniProduct">
+  
+  <div class="product">
+  <ul>
+    <li class="product_01"><a href="#"><span>상품설명 01</span></a></li>
+    <li class="product_02"><a href="#"><span>상품설명 02</span></a></li>
+    <li class="product_03"><a href="#"><span>상품설명 03</span></a></li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div 
+<!-- script -->
+<script src="../js/base/jquery-3.4.1.min.js"></script>
+<script src="../js/base/jquery-ui.js"></script>
+<!-- <script src="../js/src/jquery/slide_btn_test.js"></script> -->
+<script src="../js/src/jquery/slide_plug_sample_01.js"></script>
+<script>
+  (function($){
+    $('#miniProduct').mySlide().vertical();
+  })(jQuery);
+  </script>
+  <script>
+/*     let fn = function(n){
+     let rel = n + 10;
+     return rel;
+     //return rel을 쓰지 않으면 undifind가 뜸, 왜냐하면 함수 속에서 값을 냈고 함수안에서 끝냈으니까?
+     //return은 이 계산했던 함수를 밖으로 빼주는 개념
+    }
+    console.log(fn(10)) */
+
+    let t = function(n,r){
+      this.name = n;
+      this.rel = r;
+      //this : window, new에 의해 생성된 변수
+    }
+     
+    //js에서 new 이름을 붙이면
+    //기존의 기능을 복제처리해서 새로 생성한다는 의미
+    //생성자 
+    
+    let myt = new t('xido','this란?');
+    console.log(myt.name,myt.rel);
+
+      </Script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- join_check.html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="../../font/fontawesome/css/all.css">
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+<link rel="stylesheet" href="../../css/src/join_check.css">
+
+<!--[lf lte ie 9]>
+<scirpt src="../ie/html5shiv/dist/thml5shiv.min.js"></scirpt>
+<scirpt src="../ie/PIE/PIE.js"></scirpt>
+<scirpt src="../ie/respond/dest/respond.min.js"></scirpt>
+<![endif]-->
+
+
+<title>문서제목</title>
+</head>
+<body>
+<noscript>
+<!-- 스크립트가 제대로 동작하지 않을 때 대처하는 속성 -->
+<p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+자바스크립트의 기능을 활성화 해주세요.</p>
+<p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+</noscript>
+<!-- layout -->
+<div id="wrap">
+  <h2><span class="hidden">회원가입 동의서 체크</span><i class="fas fa-crow"></i></h2>
+  <form action="#" method="post">
+  <fieldset>
+    <legend>회원가입 동의 체크여부 확인</legend>
+    <div class="check all_check">
+      <input type="checkbox" id="allCheck" name="allCheck" value="회원가입 약관 모두 동의">
+      <p>
+       <label for="allCheck">
+       <i class="fas fa-check-square"></i>
+       이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택),<br/> 프로모션 안내 메일 수신(선택)에 모두 동의합니다.
+       </label>
+      </p>
+    </div>
+    <div class="check require_check">
+      <input type="checkbox" id="requireCheck" name="requireCheck" value="네이버 이용약관 동의체크" class="cb_sel">
+      <dl>
+      <dt>
+       <label for="requireCheck">
+          <i class="fas fa-check-square"></i>
+          네이버 이용약관 동의<strong>(필수)</strong>
+       </label>
+      </dt>
+      <dd>네이버 필수약관 내용1</dd>
+      </dl>
+      <input type="checkbox" id="requireCheck_02" name="requireCheck_02" value="개인정보 수집 및 이용 동의체크" class="cb_sel">
+      <dl>
+      <dt>
+       <label for="requireCheck_02">
+          <i class="fas fa-check-square"></i>
+          개인정보 수집 및 이용에 대한 안내<strong>(필수)</strong>
+       </label>
+        </dt>
+      <dd>네이버 필수약관 내용2</dd>
+      </dl>
+    </div>
+    <div class="check select_check">
+      <input type="checkbox" id="requireCheck_03" name="requireCheck_03" value="위치정보 이용약관 동의체크" class="cb_sel">
+      <dl>
+      <dt>
+        <label for="requireCheck_03">
+         <i class="fas fa-check-square"></i>
+         위치정보 이용약관 동의<em>(선택)</em>
+        </label>
+      </dt>
+      <dd>네이버 필수약관 내용2</dd>
+      </dl>
+      <input type="checkbox" id="requireCheck_04" name="requireCheck_04" value="이벤트 등 프로모션 알림 동의체크" class="cb_sel">
+        <p><label for="requireCheck_04">
+        <i class="fas fa-check-square"></i>
+        이벤트 등 프로모션 알림 메일 수신<em>(선택)</em>
+        </label></p>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>동의서 확인 및 취소</legend>
+    <input type="reset" value="취소">
+    <input type="submit" value="확인">
+    <p>회사, 동아리 등 단체에서 사용할 ID가 필요하세요?
+       <a href="#">단체 회원 가입</a>
+    </p>
+  </fieldset>
+  </form>
+</div>
+<!-- script -->
+<script src="../../js/base/jquery-3.4.1.min.js"></script>
+<script src="../../js/base/jquery-ui.js"></script>
+<script src="../../js/src/jquery/join_check.js"></script>
+</body>
+</html>

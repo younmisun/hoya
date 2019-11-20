@@ -1,0 +1,14 @@
+  
+  // slide_04_insert_01
+
+  dl{width:100%; height:100%; padding:9rem 2rem; box-sizing:border-box;text-align:center;}
+  dt{width:100%; height:auto;
+     font-size:3rem; font-weight:900; color:$white; 
+     text-shadow:0.2rem 0.2rem 0.2rem rgba($white, 0.5)}
+  dd.con{width:200px; height:auto; margin:1rem auto; padding-bottom:0.5rem;
+         border-bottom:$border1; font-size:1.2rem; text-align:center; color:$white;}
+  dd.link{width:200px; height:auto; margin:30px auto;
+          padding:0.3rem; color:$black; background-color:#c8ff00; 
+          >a{font-size:1.3rem; color:$black; /* font-weight:900; */
+           &:focus, &:hover{color:$black;}}}
+  

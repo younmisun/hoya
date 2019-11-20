@@ -1,0 +1,34 @@
+// slide_btn_test.scss
+
+@import "./_basic/var";
+@import "./_basic/mixin";
+@import "./_basic/etc";
+
+//--------------------------------------------------
+$url:'../../img/img_tomtom/';
+
+h1{position:relative; top:120px; left:-180px; width:500px; height:auto; text-align:left; line-height:30px; margin:auto; box-sizing:border-box;} 
+#miniProduct{position:relative; width:500px; height:400px; margin:2rem auto;}
+  .btn{position:absolute; width:150px; height:70px;  bottom:20px; right:1rem; z-index:500;
+    >button{float:left; width:70px; height:70px; font-size:2rem; background-color:transparent;
+            color:$blueGreen; font-size:50px;
+      &.next{float:right;}
+      >span{@include hidden;}
+    }//button
+  }//btn
+  .product{width:100%; height:300px; background-color:$gray;
+    >ul{$count:3;
+    width:100%*$count; height:100%; /* margin-left:-100%; */
+    >li{float:left; width:100%/$count; height:100%; padding:30px;
+              box-sizing:border-box;
+
+        // $url+"menu_0#{$n}.png"
+        &.product_01>a{display:block; @include image($i:'menu_01.png');}
+        &.product_02>a{display:block; @include image($i:'menu_02.png');}
+        &.product_03>a{display:block; @include image($i:'menu_03.png');}
+        padding:30px;
+        >a{display:block; width:100%; height:100%; background-repeat:no-repeat;
+           background-position:0 0; background-size:contain;}
+      }
+    }
+  }

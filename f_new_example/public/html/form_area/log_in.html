@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- log_in.html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="../../font/fontawesome/css/all.css">
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+<link rel="stylesheet" href="../../css/src/log_in.css">
+
+<!--[lf lte ie 9]>
+<scirpt src="../ie/html5shiv/dist/thml5shiv.min.js"></scirpt>
+<scirpt src="../ie/PIE/PIE.js"></scirpt>
+<scirpt src="../ie/respond/dest/respond.min.js"></scirpt>
+<![endif]-->
+
+<title>문서제목</title>
+</head>
+<body>
+<noscript>
+<!-- 스크립트가 제대로 동작하지 않을 때 대처하는 속성 -->
+<p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+자바스크립트의 기능을 활성화 해주세요.</p>
+<p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+</noscript>
+<!-- layout -->
+<div id="wrap">
+  <h1>회원가입</h1>
+  <div id="memberBox">
+    <div class="sns_login">
+      <h2>소셜 로그인</h2>
+      <ul>
+        <li><a href="#"><i></i><span class="hidden">네이버로그인</span></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i><span class="hidden">페이스북로그인</span></a></li>
+        <li><a href="#"><i class="fab fa-google-plus-square"></i><span class="hidden">구글로그인</span></a></li>
+      </ul>
+      <form action="" method="post"><!-- action은 submit을 했을 때 이동되어지는 곳, url을 입력하거나 하면 됨 -->
+        <fieldset>
+          <legend>log in</legend>
+          <div class="in_form">
+            <label for="" class="hidden">로그인 계정을 입력하세요.</label>
+            <input type="text" name="userId" id="userId" value="" placeholder="이메일/아이디">
+
+            <label for="" class="hidden">계정에 대한 비밀번호를 입력하세요.</label>
+            <input type="password" name="userPassword" id="userPw" value="" placeholder="비밀번호">
+          </div>
+          <div class="btn_form">
+            <input type="submit" name="memberBtn" value="log in" />
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <legend>회원가입 및 계정찾기</legend>
+          <a href="join.html">회원가입</a>
+          <a href="#">아이디/비밀번호찾기</a>
+        </fieldset>
+      </form> 
+    </div>
+    <div class="join">
+      <h2>join</h2>
+    </div>
+  </div>
+</div>
+<!-- script -->
+<script src="../../js/base/jquery-3.4.1.min.js"></script>
+<script src="../../js/base/jquery-ui.js"></script>
+<script src="../../js/src/jquery/log_in.js"></script>
+</body>
+</html>

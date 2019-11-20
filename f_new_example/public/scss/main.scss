@@ -1,13 +1,18 @@
 // main.scss -> main.css로 변환처리
 /* main.css */
 
-@import "_basic/var";
+@import "_basic/var";  
 @import "_basic/mixin";
 @import "_basic/etc";
 
-#wrap{width:100%; height:100%; background-color:#cfa;}
+#wrap{width:100%; height:auto; background-color:#cfa;}
+  
 
 @import "./_temp/slide_01";
+@import "./_temp/slide_02";
+@import "./_temp/slide_03";
+@import "./_temp/slide_04";
+@import "./_temp/slide_05";
 
 //url() 을 입렫하면 해당파일을 별도의 파일로 첨부하는 의미
 //url() 없이 ""로 사용하면 (scss파일), 해당파일을 하나의 파일로 합치는 현상

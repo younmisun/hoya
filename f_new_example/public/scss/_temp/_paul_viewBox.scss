@@ -1,0 +1,45 @@
+// paul_viewBox.scss
+#viewBox{position:relative; width:100%; height:100%; background-color:lighten($sample,20%);
+  >h2{@include hidden;}
+  .indicator{position:absolute; right:1.5rem; top:0; bottom:0; margin:auto; z-index:500;
+             width:150px; height:130px; /* background-color:rgba($white,0.4); */
+             >p{width:100%; height:70px; font-size:3rem; padding-bottom:10px; color:$white; text-align:center;
+              >em{font-style:normal; font-weight:900;
+                &:after{content:"/";}}
+              >span{font-size:1.5rem; color:darken($white,20%)}
+            }
+             .view_btn{width:100%; height:auto;
+            >button{width:40%; height:40px; float:left; float:right; background-color:transparent;
+                    font-size:2rem;
+                    &:last-of-type{float:left;}
+                    &>span{@include hidden;}
+                    &:hover,&:focus{color:$primary;
+                    &.action{color:$primary}}}}
+                    
+          }
+    .fake_btn{position:absolute; width:100%; height:100%; bottom:0; cursor:pointer;}
+  .slide_form{width:100%; height:100%; background-color:rgba($black,0.2);
+    >ul{width:100%; height:100%;
+    >li{position:absolute; top:0; left:0; width:100%; height:100%;
+        word-break:break-all; white-space:nowrap;
+        font-size:5rem; font-weight:bold; color:$white;
+        box-sizing:border-box; padding:5vw;
+        background-repeat:no-repeat; background-position:100% 50%;
+        background-size:150%; 
+        >dl {width:100%; height:50%; padding-top:12vw;
+         dt {opacity:0; font-size:8rem; text-transform:capitalize; line-height:9rem;}
+         dd {opacity:0; font-size:1.3rem; text-shadow:none; margin:5rem 0; font-weight:300;}
+         dd.link{text-transform:uppercase; text-decoration:underline;}
+         &.action{
+                  %act{display:block; opacity:1; transform:translateY(-50px);}
+                  dt{@extend %act; transition:all 500ms ease 100ms;}
+                  dd.con{@extend %act; transition:all 500ms ease 300ms;}
+                  dd.link{@extend %act; transition:all 500ms ease 500ms;}
+                }
+        }
+        &:nth-child(1){background-color:darken($blueGreen,5%);}
+        &:nth-child(2){background-color:darken($blueGreen,10%);}
+        &:nth-child(3){background-color:darken($blueGreen,20%);}}
+      }}
+}
+ 
